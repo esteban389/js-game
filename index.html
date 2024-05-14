@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+  </head>
+  <body class="hero is-fullheight">
+    <header>
+      <h1 class="title has-text-centered py-4">Super fun game</h1>
+    </header>
+    <main class="container is-widescreen">
+      <button class="button" onclick="startGame()">Start game</button>
+      <canvas id="canvas" style="height: 100%"></canvas>
+    </main>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Game project</strong> by
+          <a href="https://github.com">Esteban Murcia</a>. The source code is
+          licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="game_renderer.js"></script>
+  </body>
+</html>
